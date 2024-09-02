@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+</head>
+<style>
+    div{
+        text-align:left;
+        color: rgb(8, 1, 1);
+    }
+    .sameclass{
+        background-color: paleturquoise;
+        color: aliceblue;
+    }
+</style>
+<body>
+    <h1>HTML FORM</h1>
+    <h3>Send Message</h3>
+    <form>
+        <div>
+            <label for="number"> Enter your number:</label>
+            <input type="number" id="number" class="sameclass" min="1" val="1" placeholder="Enter your phone no."/>
+        </div>
+    </br>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" class="sameclass" placeholder="example- john@2435"/>
+        </div>
+    </br>
+        <div>
+            <label for="email">Enter your email:</label>
+            <input 
+                type="email" 
+                placeholder="Enter your eamil"
+                name="email"
+                required
+                autocomplete="off"
+                pattern="[a-z 0-9 ._%+-]+@[a-z 0-9 .-]+\[a-z]{2,}$"
+                size="20"
+                value=" "  
+            />
+            <!-- (readonly
+            disable) these two are also attributes in email-->
+        </div>
+        <input type="submit" value="login" />
+    </br>
+        <div>
+            <label for="password">Enter your password:</label>
+            <input type="password" id="paasword" placeholder="Enter your password"/>
+        </div>
+    </br>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" value="female"/>female
+            <input type="radio" name="gender" value="male"/>male
+        </div>
+
+        <div>
+            <label for="hobbies">Fav Hobbies:</label>
+            <input type="checkbox" name="interest" value="music"/>music
+            <input type="checkbox" name="interest" value="sports"/>sports
+        </div>
+
+        <div>
+            <label for="country">Fav Country</label>
+            <select name="Country" id="country">
+                <option val="ind">IND</option>
+                <option val="usa">USA</option>
+                <option val="canada">Canada</option>
+                <option val="france">France</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="country">Select a country:</label>
+            <input type="text" id="country" name="country" list="countries" />
+            <datalist id="countries">
+                <option val="ind">IND</option>
+                <option val="usa">USA</option>
+                <option val="canada">Canada</option>
+                <option val="france">France</option>
+            </datalist>
+        </div>
+    </br>
+        <div>
+            <label for="textarea">Message:</label>
+            <textarea name="" id="textarea" cols="10" rows="5" placeholder="Enter your comments.."></textarea>
+        </br>
+            <input type="submit" value="send message">
+        </div>
+        
+        <div>
+            <label for="file">Select file</label>
+            <input type="file" name="fileupload"/>
+        </div>
+
+        <button type="upload">Upload</button>
+        
+        <!-- <button type="submit">Upload</button> -->
+    </form>
+</body>
+</html>

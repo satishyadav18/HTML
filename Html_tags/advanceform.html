@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance form</title>
+    
+    <style>
+        h1{
+          font-weight: bold;  
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <div>
+            <label for="range">Range: </label>
+            <input type="range" name="volume" min="0" max="100" value="50"/>
+        </div>
+            <br/>
+        <div>
+            <label for="birthdate">Birthdate: </label>
+            <input type="date" name="birthdate"/>
+        </div>
+            <br/>
+        <div>
+            <label for="appointmentTime">appointmentTime: </label>
+            <input type="time" name="appointmentTime"/>
+        </div>
+            <br/>
+        <div>
+            <label for="favcolour">favcolour: </label>
+            <input type="color" name="favcolour"/>
+        </div>
+            <br/>
+        <div>
+            <label for="website">website: </label>
+            <input type="url" name="website" placeholder="Enter website URL" size="15"/>
+        </div>
+            <br/>
+        <div>
+            <label for="searchQuerry">searchQuerry: </label>
+            <input type="search" name="seachQuerry" placeholder="Search....." size="10"/>
+        </div>
+            <br/>
+        <div>
+            <label for="expiryDate">Month & Year: </label>
+            <input type="month" name="epiryDate" />
+        </div>
+            <br/>
+        <div>
+            <label for="week">vacationWeek: </label>
+            <input type="week" name="vacationWeek"/>
+        </div>
+            <br/>
+        <fieldset>
+            <legend>Personal Info</legend>
+            <div>
+                <label for="number"> Enter your number:</label>
+                <input type="number" id="number" class="sameclass" min="1" val="1" placeholder="Enter your phone no."/>
+            </div>
+        </br>
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" class="sameclass" placeholder="example- john@2435"/>
+            </div>
+        </br>
+            <div>
+                <label for="email">Enter your email:</label>
+                <input 
+                    type="email" 
+                    placeholder="Enter your eamil"
+                    name="email"
+                    required
+                    autocomplete="off"
+                    pattern="[a-z 0-9 ._%+-]+@[a-z 0-9 .-]+\[a-z]{2,}$"
+                    size="20"
+                    value=" "  
+                />
+                <!-- (readonly
+                disable) these two are also attributes in email-->
+            </div>
+        </br>
+            <div>
+                <label for="password">Enter your password:</label>
+                <input type="password" id="paasword" placeholder="Enter your password"/>
+            </div>
+        </br>
+            <input type="submit" value="login" />
+        </fieldset>
+    </form>
+</body>
+</html>
